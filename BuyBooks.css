@@ -1,0 +1,147 @@
+body{
+	background-image: url('wp3.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-color: #e6e6ff;
+	margin: 10px;
+	align-items:center;
+}
+
+.container{
+	display: block;
+	background-color: #fff;
+	border-radius:10px;
+	width:60%;
+	height: 60%;
+	padding: 10px;
+	margin: auto;
+}
+div.header{
+	background-color: rgba(217, 179, 255,.4);
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	border-radius: 10px;
+	font-family: Courier;
+}
+table{
+	line-height: 220%;
+	width: 98%;
+	font-size: 100%;
+	font-family: Courier;
+	margin:auto;
+	font-weight: bold;
+	border-radius: 4px;
+}
+/*tr:last-child{
+	/*background-color: rgba(217, 179, 255,.4);
+	background-color: #e6e6ff;
+	font-size: large;
+	
+}
+tr:last-child>td{
+	border: 2px solid #660066;
+	background-color: rgba(217, 179, 255,.0);
+}
+tr:last-child>td:last-child{
+	text-align: right;
+	padding-right: 3%;
+}*/
+/*table,th,td{
+	border: 2px solid #660066;
+	}*/
+
+#lastrow{
+	background-color: #e6e6ff;
+	font-size: large;
+}
+
+#lastrow>td{
+	border: 2px solid #660066;
+	background-color: rgba(217, 179, 255,.0);
+}
+
+#lastrowlastcol{
+	text-align: right;
+	padding-right: 3%;
+}
+
+td{
+	border-radius: 4px;
+	padding-left: 5px;
+	background-color: #e6e6ff;
+	margin: 5px;
+}
+th{
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+	border-radius: 4px;
+	background-color: rgba(217, 179, 255,.4);
+}
+td:not(:first-child){
+	text-align: center;
+}
+input{
+	margin-left: 10px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 4px;
+	border-color: #e6e6ff;
+}
+
+#ip{
+	width: 30%;
+	height: 20px;
+}
+button{
+	background-color:#e6e6ff;
+	border-radius:4px;
+	font-size: large;
+	font-family:inherit;
+	color:#000;
+	width: 35%;
+	margin: 5px;
+	padding: 10px;
+	transition: background-color color;
+	outline: none;
+}
+button:hover{
+	background-color: #3d3d5c;
+	color: white;
+}
+
+details{
+	margin-top: 5px;
+}
+
+summary { 
+	padding: 7px;
+	width: 200px;
+	background-color: #e6e6ff;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px #bbbbbb;
+	cursor: pointer;
+	margin-left: 7px;
+	outline: none;
+}
+
+.animate-show-hide.ng-hide {
+  opacity: 0;
+  transition: all linear 1.5s;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+  transition: all linear 1.5s;
+}
+
+.check-element { 
+  opacity: 1;
+}
+
+input[type=checkbox] {
+    zoom: 1.5;
+}

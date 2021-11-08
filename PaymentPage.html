@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en" ng-app="">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset = "UTF-8">
+    <title>Form Validation</title>
+    <link href="ValidationForm.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Payment Details</h1>
+        </div>
+        <div class="subHeader">
+            <p><b><em><h2>Accepted cards</h2></em></b></p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Old_Visa_Logo.svg/786px-Old_Visa_Logo.svg.png" 
+                alt="Visa" class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/MasterCard_early_1990s_logo.svg/1200px-MasterCard_early_1990s_logo.svg.png" 
+            alt="master card" class="logos">
+            <img src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/wp-cms/uploads/2018/04/4-you-might-not-notice-amex-new-brand.jpg" 
+            alt="Amex" class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Maestro_2016.svg/180px-Maestro_2016.svg.png" 
+            alt="maestro" class="logos">
+        </div>
+        <div class="details">
+            <form  onsubmit="return validate()" name = "myform" method="post" action="ActionPage.html">
+                <div class="details1">
+                    <label for="card-holder"><b><em><h3>Card Holder's Name: </h3></em></b>
+                        <input type="text" id="cname" placeholder="Name" required name="card-holder"/>
+                    </label>
+                </div>
+                <div class="details1">
+                    <label for="card-number"><b><em><h3>Card Number: </h3></em></b>
+                        <input type="number" id="cn" placeholder="16-Digit Number" required name="card-number"/>
+                    </label>
+                </div>
+                <div class="details1">
+                    <label for="card-cvv"><b><em><h3>CVC: </h3></em></b>
+                        <input type="number" id="cvv" placeholder="CVV" required name="card-cvv"/>
+                    </label>   
+                </div>
+                <div class="details1">
+                    <label for="card-expiry"><b><em><h3>Expiry Date: </h3></em></b></label>
+                    <select>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select>
+                        <option value="2021"> 2021</option>
+                        <option value="2022"> 2022</option>
+                        <option value="2023"> 2023</option>
+                        <option value="2024"> 2024</option>
+                        <option value="2025"> 2025</option>
+                        <option value="2026"> 2026</option>
+                    </select>
+                </div>
+                <span id="img-show"></span>
+                <div>
+                    <input type="checkbox" id="clear" name="clear" onchange= "clearFunction()"/>
+                    <label for = "clear"><b><em>Clear</em></b></label>
+                    <center><button type="submit"><b>Submit<b></button></center>
+                </div>
+                </form>
+            </div> 
+    </div>
+    <script type="text/javascript" src="ValidationForm.js"></script>
+</body>
+</html>
