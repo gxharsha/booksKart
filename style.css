@@ -1,0 +1,83 @@
+body{
+    margin:0;
+    background-color:rgb(235, 231, 231);
+}
+.container{
+    margin: 35px 15px 20px 15px;
+    text-align: center;
+}
+.container h1{
+    font-family: Arial;
+    letter-spacing: 4px;
+    font-weight: 350;
+    font-size: 2.5rem;
+}
+label{
+    font-family: Arial;
+    margin: 20px 10px;
+}
+label input{
+    margin: 10px;
+    border-radius: 3px;
+    border: none;
+    outline:none;
+    height: 1.5rem;
+}
+.logos{
+    width:9%;
+    height:5%;
+    margin:0 8px;
+}
+div[name="info"]{
+    text-align: center;
+    width: 50%;
+    margin:10px auto 20px auto;
+    background-color:rgba(95, 95, 94, 0.808);
+    font-family: Arial;
+    letter-spacing:2px;
+    font-size: 1.7rem;
+    color: #fff;
+}
+.input-focus{
+    outline: none;
+    box-shadow: 0 0 6px 0.5px #34c1f8;
+}
+
+.error{
+    z-index: 5;
+    box-shadow: 0 0 6px 1px #f73333;
+}
+#shows{
+    width:3%;
+    position:relative;
+    top:8px;
+}
+label[for="card-holder"]{
+    position: relative;
+    right:88px;
+}
+#cvv{
+    width:3%;
+}
+label[for="card-cvv"]{
+    position: relative;
+    right:150px;
+}
+#cname{
+    width: 15%;
+}
+#cn{
+    margin-left: 20px;
+    width: 17%;
+}
+label[for="card-number"]{
+    padding-left:85px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
